@@ -184,3 +184,66 @@ body {
   border-color: #666; /* Highlight when editing */
   background: #f9f9f9;
 }
+
+
+
+/* Mobile Responsiveness (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .take-a-note-div {
+    width: 90vw; /* Use viewport width for better responsiveness */
+    margin-top: 10px;
+  }
+
+  .take-a-note-textarea {
+    width: 85vw;
+    padding: 10px;
+  }
+
+  .title-area {
+    width: 85vw;
+    padding: 10px;
+  }
+
+  .note {
+    width: 85vw;
+    min-height: 120px;
+    margin: 10px 0;
+  }
+
+  .note-clone {
+    width: 90vw !important;
+    height: 70vh !important;
+    left: 5vw !important;
+    transform: translate(0, -50%) !important;
+  }
+
+  .notewrapper {
+    padding: 10px;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .add-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+  }
+
+  /* Adjust the expanded note view */
+  .note-clone .note-content {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  /* Hide color picker on mobile or replace with mobile-friendly alternative */
+  
+
+  /* Improve touch targets */
+  button, .note {
+    min-height: 44px; /* Recommended minimum touch target size */
+  }
+}
