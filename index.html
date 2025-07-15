@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Notes</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="take-a-note-div" id="take-a-note-div" tabindex="0">
+        <textarea
+          name="title-area"
+          id="title-area"
+          class="title-area"
+          placeholder="Title"
+        ></textarea>
+        <textarea
+          name="take-a-note"
+          id="take-a-note-textarea"
+          class="take-a-note-textarea"
+          placeholder="Take a note..."
+        ></textarea>
+        <div class="add-btn-div">
+          <button id="add-btn" class="add-btn">+</button>
+        </div>
+      </div>
+      <div class="notewrapper" id="notewrapper"></div>
+    </div>
+    <div id="backdrop"></div>
+    <input
+      type="color"
+      id="note-color"
+      value="#ffffff"
+      title="Choose note color"
+    />
+    <script src="note.js"></script>
+  </body>
+</html>
